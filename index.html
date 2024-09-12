@@ -13,7 +13,7 @@
             background-color: #f0f0f0;
         }
         .container {
-            max-width: 600px;
+            max-width: 800px;
             margin: auto;
             padding: 20px;
             background-color: #ffffff;
@@ -27,18 +27,33 @@
             padding: 10px;
             border-radius: 5px;
             overflow-x: auto;
+            display: inline-block;
+            position: relative;
+            transition: transform 0.1s ease;
+        }
+        img {
+            max-width: 100%; /* Ajusta la imagen para que no se salga del contenedor */
+            height: auto;   /* Mantiene la proporción de la imagen */
+            margin: 20px 0; /* Espacio arriba y abajo de la imagen */
+            border: 2px solid #ddd; /* Borde opcional para la imagen */
+            border-radius: 8px; /* Bordes redondeados opcionalmente */
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Mensaje y Dibujo de Pato</h1>
+        <h1>Eres increíble Jimmy</h1>
         <p>Mereces lo mejor, I quack you!</p>
-        <pre>
-   __
-&(o )___
-  (  ._> 
-  `-.__)
+        
+        <!-- Imagen -->
+        <img src="Documentos/nao.jpg" alt="te quiero mucho">
+
+        <!-- Dibujo del pato -->
+        <pre id="pato">
+      __
+   &(o )___
+     (  ._> 
+     `-.__)
         </pre>
     </div>
 </body>
